@@ -4,10 +4,13 @@
 using namespace std;
 
 int main(){
-    int t,a,b;
+    int t,a;
     cin>>t;
-    for (int i=0;i<t;i++){
-        
+
+    while(t--){
+        cin>>a;
+        auto a=0,b=0;
     }
+
     return 0;
 }
