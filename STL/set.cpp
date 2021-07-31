@@ -25,10 +25,19 @@ int main(){
         cout<<i<<endl;
     }cout<<endl;
     s.erase(s.begin());
+set<int>::iterator it = s.begin();
+
 
     cout<<endl;
     for (int i:s){
         cout<<i<<endl;
+    }cout<<endl;
+    cout<<"is -5 the element present or not -> "<<s.count(-5)<<endl;//this tells us that is count is working or not.
+
+    set<int>::iterator itr = s.find(5);
+    for (auto it=itr; it!=s.end();it++){
+        cout<<*it<<" ";
+
     }cout<<endl;
 
 }
