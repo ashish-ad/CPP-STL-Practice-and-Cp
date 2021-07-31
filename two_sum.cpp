@@ -12,7 +12,7 @@ int main(){
     for (int i; i<nums.size();i++){
         int reminder = target - nums[i];
         k[nums[i]]=target;
-        if (k.find(nums[i])==reminder){
+        if (k.find(nums[i]) == reminder){
             re.push_back(nums[i]);
         }
         else{
