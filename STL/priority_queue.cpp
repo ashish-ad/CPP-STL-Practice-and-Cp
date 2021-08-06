@@ -38,7 +38,7 @@ int main(){
 
     }cout<<endl;
 
-    cout<<"Khaali hai kya bhai ?? -> "<<mini.empty()<<endl;
+    cout<<"Is the Queue empty: ?? -> "<<mini.empty()<<endl;
 
 
 
