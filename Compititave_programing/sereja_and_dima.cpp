@@ -9,25 +9,35 @@ int main(){
     int x;
     cin>>n;
     vector <int> cards(n);
+    int sum=0;
 
-    for (int & i:cards){
+    for (auto & i:cards){
         cin>>i;
+        sum +=i;
     }
-    for (int i: cards){
-        cout<<i<<"\t";
-    }cout<<endl;
+    int a = 0,b = n-1;
+    bool ch = true;
+    int ans=0;
+    while(a<=b){
+        if (cards[a]>cards[b]){
+            if (ch){
+                ans+=cards[a];
+            }
+            a++;
 
-    
-    vector <int> ::iterator p1;
-    vector <int> ::iterator p2;
-    vector <int> sereja;
-    vector <int> dima;
-    for (int i:sereja){
-        cout<<i<<endl;
+        }
+        else{
+            if (ch){
+                ans+=cards[b];
+            }
+            b--;
+
+        }
+        ch = !ch;
     }
-    for (int i:dima){
-        cout<<i<<endl;
-    }
+    cout << ans <<" "<<sum-ans<<endl;
     return 0;
+    
+
 }
     
