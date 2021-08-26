@@ -1,2 +1,3 @@
-8
-1 -1 1 -1 -1 1 1 1
+for (auto i:sq){
+    //     cout<<i<<"\t";
+    // }cout<<endl;
