@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <thread>
 
 using namespace std;
 
@@ -19,8 +20,8 @@ void function2(){
 
 int main()
 {
-    thread worker1(function, 'o');
+    thread worker1(function1, 'o');
     thread worker2(function2);
 
-    system("pause>null");
+    system("pause>nul");
 }
