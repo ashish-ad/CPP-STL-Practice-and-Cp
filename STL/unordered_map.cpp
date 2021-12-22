@@ -18,7 +18,6 @@ int main(){
     // Iterate
     for (auto & elm :umap){
         cout<<elm.first<<"\t"<<elm.second<<endl;
-
     }cout<<endl;
 
     // Find
